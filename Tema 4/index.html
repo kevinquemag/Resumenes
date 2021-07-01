@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>RESUMEN 4</h1>
+    La función que define qué hacer con cada clic numérico se llama onNumberClick, y esta función obtiene el número donde se hizo clic.
+    Por lo tanto, cuando hace clic, puede notificar el estado con onNumberClick. Cuando hace clic en un número, onNumberClick anuncia el estado 
+    del número en el que se hizo clic, el comportamiento de onNumberClick se pasa al componente PlayNumber, el componente 
+    en el que está intentando hacer clic y la nueva propiedad también está configurada para ser llamada onClick. Como onNumberClick, por lo tanto 
+    le dice al subcomportamiento qué llamar cada vez que se hace clic en el comportamiento principal, y en el componente PlayNumber,
+    este comportamiento se recibe como medio de respaldo y se puede acceder a él como un accesorio onClick.
+    Los comportamientos son establecidos por el padre de la siguiente manera: Cuando realiza una llamada, 
+    puede pasar el número en el que hizo clic. También puede pasar el estado del número 
+    en el que hizo clic en lugar de contar el estado del accesorio y los nuevos cálculos de transición. 
+    En el estado onNumberClick, esta función obtiene el número donde se hizo clic en 
+    y el estado actual del número en el que se hizo clic.
+    Usar una función flecha en el renderizado crea una nueva función cada vez que se renderiza el componente, 
+    lo cual podría arruinar optimizaciones basadas en comparación estricta de identidad.
+</body>
+</html>
